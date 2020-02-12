@@ -56,7 +56,7 @@ public class ToDoItemRepository {
               ToDoItem toDoItem = new ToDoItem();
 
               toDoItem.setId((resultSet.getLong("id")));
-              toDoItem.setDescription(resultSet.getString("deadline"));
+              toDoItem.setDescription(resultSet.getString("description"));
               toDoItem.setDeadline(resultSet.getDate("deadline").toLocalDate());
               toDoItem.setDone(resultSet.getBoolean("done"));
               toDoItems.add(toDoItem);
